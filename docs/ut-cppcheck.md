@@ -1,10 +1,11 @@
+# cppcheck
 
 ```sh
 apt show cppcheck
 apt install cppcheck
 ```
 ```sh
-cppcheck src/hello_world.cpp 2> logs/cppcheck.log                                                                                                                    feat-ci  ✭ ✱
+cppcheck src/hello_world.cpp 2> logs/cppcheck.log
 
 cppcheck \
   --enable=warning,style,performance,portability \
