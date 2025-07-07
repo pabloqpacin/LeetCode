@@ -76,10 +76,8 @@ jobs:
       run: |
         # Configuración mejorada de cppcheck
         cppcheck \
-          --enable=all \
+          --enable=warning,style,performance,portability \
           --suppress=missingIncludeSystem \
-          --suppress=unusedFunction \
-          --suppress=missingInclude \
           --error-exitcode=1 \
           --inline-suppr \
           --xml-version=2 \
